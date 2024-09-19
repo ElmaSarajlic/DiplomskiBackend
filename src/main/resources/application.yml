@@ -1,0 +1,21 @@
+configuration:
+  swagger:
+    app: 'Digital Marketplace for Local Artisans Application'
+    description: 'Digital Marketplace for Local Artisans Application built using SpringBoot '
+    developer: 'Elma Sarajlić'
+    email: 'elma.sarajlic@stu.ibu.edu.ba'
+  mailsender:
+    default: 'sendgrid'
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://elmasarajlic:biLmagJWDqu0PBLJ@cluster0.qqyhjfn.mongodb.net/?retryWrites=true&w=majority
+      database: elmasarajlic
+
+security:
+  jwt:
+    secret: 'mXLjT3Gm4skNsCdNtWodbHPb1GqY35fGwaisLwImIp8cPZP7W6'
+
+stripe:
+  apiKey: 'sk_test_51PLXlXP9f58hdp8jsFm6qZ3vrY2JsDUthrpe9huxjc84pWghDvC2LicgN60G2FvWUiEik7VjwICZ2AVUhb5ICXiU00DRV9kGnF'
