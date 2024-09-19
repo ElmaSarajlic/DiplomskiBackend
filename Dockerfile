@@ -3,7 +3,7 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target/DigitalMarketplace-0.0.1-SNAPSHOT.jar DigitalMarketplace.jar
+COPY --from=build /target/elma-0.0.1-SNAPSHOT.jar elma.jar
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","DigitalMarketplace.jar"]
+ENTRYPOINT ["java","-jar","elma.jar"]
